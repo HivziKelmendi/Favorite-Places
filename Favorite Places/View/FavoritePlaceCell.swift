@@ -19,8 +19,8 @@ class FavoritePlaceCell: UITableViewCell {
     
     func updateCell(from favoritePlace: FavoritePlace) {
         
-        self.longitudeLabel.text = String(format: "%.3f", favoritePlace.longitude)
-        self.latitudeLabel.text = String(format: "%.3f", favoritePlace.latitude )
+        self.longitudeLabel.text = "Longitude: \(String(format: "%.4f", favoritePlace.longitude))"
+        self.latitudeLabel.text = "Latitude: \(String(format: "%.4f", favoritePlace.latitude))"
         if let photoData = favoritePlace.photo as Data? {
         self.photo.image  = UIImage(data: photoData)
         }

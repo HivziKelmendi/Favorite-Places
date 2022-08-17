@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class FavortePlacesVC: UIViewController {
     let persistence = PersistenceManager()
@@ -40,10 +41,25 @@ extension FavortePlacesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let department = departments[indexPath.row]
-//        completionHandler!(department)
-//        dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "FavoriteToMap", sender: self)
+        
+         func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let destinationVC = segue.destination as! MapVC
+        
+            if segue.identifier == "FavoriteToMap"  {
+                
+                let pin = MKPointAnnotation()
+                pin.coordinate.latitude = favoritePlaces[indexPath.row].latitude
+                pin.coordinate.longitude = favoritePlaces[indexPath.row].longitude
+                destinationVC.map.addAnnotation(pin)
+            }
+            else  {
+
+            }
+        }
     }
+  
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var cellHeight:CGFloat = CGFloat()

@@ -37,8 +37,6 @@ class MapVC: UIViewController, UIImagePickerControllerDelegate & UINavigationCon
                 pin.coordinate = location.coordinate
                 self.latitude = location.coordinate.latitude
                 self.longitude = location.coordinate.latitude
-                print("latitude is \(self.latitude)")
-                print("latitude is \(self.longitude)")
                 self.map.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7)), animated: true)
                 self.map.addAnnotation(pin)
                

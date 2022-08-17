@@ -14,9 +14,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let persistence = PersistenceManager()
-//        persistence.DeleteData()
-        // Do any additional setup after loading the view.
+
     }
     
 
