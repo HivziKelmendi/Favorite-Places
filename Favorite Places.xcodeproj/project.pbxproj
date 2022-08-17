@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		5EC8A29F28AD843A00BC33B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A29E28AD843A00BC33B4 /* AppDelegate.swift */; };
 		5EC8A2A128AD843A00BC33B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2A028AD843A00BC33B4 /* SceneDelegate.swift */; };
-		5EC8A2A328AD843A00BC33B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2A228AD843A00BC33B4 /* ViewController.swift */; };
 		5EC8A2A628AD843A00BC33B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC8A2A428AD843A00BC33B4 /* Main.storyboard */; };
 		5EC8A2A928AD843A00BC33B4 /* Favorite_Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2A728AD843A00BC33B4 /* Favorite_Places.xcdatamodeld */; };
 		5EC8A2AB28AD843C00BC33B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC8A2AA28AD843C00BC33B4 /* Assets.xcassets */; };
 		5EC8A2AE28AD843C00BC33B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC8A2AC28AD843C00BC33B4 /* LaunchScreen.storyboard */; };
+		5EC8A2B728AD853600BC33B4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC8A2B628AD853600BC33B4 /* FirebaseAuth */; };
+		5EC8A2B928AD853600BC33B4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC8A2B828AD853600BC33B4 /* FirebaseFirestore */; };
+		5EC8A2BB28AD866100BC33B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EC8A2BA28AD866100BC33B4 /* GoogleService-Info.plist */; };
+		5EC8A2BD28AD878D00BC33B4 /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2BC28AD878D00BC33B4 /* EntryVC.swift */; };
+		5EC8A2C628AD87BC00BC33B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2BE28AD87BC00BC33B4 /* LoginVC.swift */; };
+		5EC8A2C728AD87BC00BC33B4 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2BF28AD87BC00BC33B4 /* PersistenceManager.swift */; };
+		5EC8A2C828AD87BC00BC33B4 /* FavoritePlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C028AD87BC00BC33B4 /* FavoritePlaceModel.swift */; };
+		5EC8A2C928AD87BC00BC33B4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C128AD87BC00BC33B4 /* RegisterVC.swift */; };
+		5EC8A2CA28AD87BC00BC33B4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C228AD87BC00BC33B4 /* LocationManager.swift */; };
+		5EC8A2CB28AD87BC00BC33B4 /* FavortePlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C328AD87BC00BC33B4 /* FavortePlacesVC.swift */; };
+		5EC8A2CC28AD87BC00BC33B4 /* FavoritePlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C428AD87BC00BC33B4 /* FavoritePlaceCell.swift */; };
+		5EC8A2CD28AD87BC00BC33B4 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8A2C528AD87BC00BC33B4 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5EC8A29B28AD843A00BC33B4 /* Favorite Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favorite Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC8A29E28AD843A00BC33B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC8A2A028AD843A00BC33B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EC8A2A228AD843A00BC33B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EC8A2A528AD843A00BC33B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EC8A2A828AD843A00BC33B4 /* Favorite_Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorite_Places.xcdatamodel; sourceTree = "<group>"; };
 		5EC8A2AA28AD843C00BC33B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EC8A2AD28AD843C00BC33B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC8A2AF28AD843C00BC33B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC8A2BA28AD866100BC33B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EC8A2BC28AD878D00BC33B4 /* EntryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
+		5EC8A2BE28AD87BC00BC33B4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5EC8A2BF28AD87BC00BC33B4 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		5EC8A2C028AD87BC00BC33B4 /* FavoritePlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePlaceModel.swift; sourceTree = "<group>"; };
+		5EC8A2C128AD87BC00BC33B4 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		5EC8A2C228AD87BC00BC33B4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5EC8A2C328AD87BC00BC33B4 /* FavortePlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavortePlacesVC.swift; sourceTree = "<group>"; };
+		5EC8A2C428AD87BC00BC33B4 /* FavoritePlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePlaceCell.swift; sourceTree = "<group>"; };
+		5EC8A2C528AD87BC00BC33B4 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC8A2B728AD853600BC33B4 /* FirebaseAuth in Frameworks */,
+				5EC8A2B928AD853600BC33B4 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +80,57 @@
 		5EC8A29D28AD843A00BC33B4 /* Favorite Places */ = {
 			isa = PBXGroup;
 			children = (
+				5EC8A2D128AD884D00BC33B4 /* Manager */,
+				5EC8A2D028AD884300BC33B4 /* Controller */,
+				5EC8A2CF28AD880900BC33B4 /* Model */,
+				5EC8A2CE28AD880100BC33B4 /* View */,
 				5EC8A29E28AD843A00BC33B4 /* AppDelegate.swift */,
 				5EC8A2A028AD843A00BC33B4 /* SceneDelegate.swift */,
-				5EC8A2A228AD843A00BC33B4 /* ViewController.swift */,
-				5EC8A2A428AD843A00BC33B4 /* Main.storyboard */,
 				5EC8A2AA28AD843C00BC33B4 /* Assets.xcassets */,
 				5EC8A2AC28AD843C00BC33B4 /* LaunchScreen.storyboard */,
 				5EC8A2AF28AD843C00BC33B4 /* Info.plist */,
+				5EC8A2BA28AD866100BC33B4 /* GoogleService-Info.plist */,
 				5EC8A2A728AD843A00BC33B4 /* Favorite_Places.xcdatamodeld */,
 			);
 			path = "Favorite Places";
+			sourceTree = "<group>";
+		};
+		5EC8A2CE28AD880100BC33B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8A2A428AD843A00BC33B4 /* Main.storyboard */,
+				5EC8A2C428AD87BC00BC33B4 /* FavoritePlaceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EC8A2CF28AD880900BC33B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8A2C028AD87BC00BC33B4 /* FavoritePlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EC8A2D028AD884300BC33B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8A2BC28AD878D00BC33B4 /* EntryVC.swift */,
+				5EC8A2C128AD87BC00BC33B4 /* RegisterVC.swift */,
+				5EC8A2C528AD87BC00BC33B4 /* MapVC.swift */,
+				5EC8A2BE28AD87BC00BC33B4 /* LoginVC.swift */,
+				5EC8A2C328AD87BC00BC33B4 /* FavortePlacesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5EC8A2D128AD884D00BC33B4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8A2BF28AD87BC00BC33B4 /* PersistenceManager.swift */,
+				5EC8A2C228AD87BC00BC33B4 /* LocationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +149,10 @@
 			dependencies = (
 			);
 			name = "Favorite Places";
+			packageProductDependencies = (
+				5EC8A2B628AD853600BC33B4 /* FirebaseAuth */,
+				5EC8A2B828AD853600BC33B4 /* FirebaseFirestore */,
+			);
 			productName = "Favorite Places";
 			productReference = 5EC8A29B28AD843A00BC33B4 /* Favorite Places.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 5EC8A29228AD843A00BC33B4;
+			packageReferences = (
+				5EC8A2B528AD853600BC33B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5EC8A29C28AD843A00BC33B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC8A2AE28AD843C00BC33B4 /* LaunchScreen.storyboard in Resources */,
+				5EC8A2BB28AD866100BC33B4 /* GoogleService-Info.plist in Resources */,
 				5EC8A2AB28AD843C00BC33B4 /* Assets.xcassets in Resources */,
 				5EC8A2A628AD843A00BC33B4 /* Main.storyboard in Resources */,
 			);
@@ -141,10 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC8A2A328AD843A00BC33B4 /* ViewController.swift in Sources */,
+				5EC8A2CB28AD87BC00BC33B4 /* FavortePlacesVC.swift in Sources */,
+				5EC8A2CD28AD87BC00BC33B4 /* MapVC.swift in Sources */,
+				5EC8A2C828AD87BC00BC33B4 /* FavoritePlaceModel.swift in Sources */,
+				5EC8A2CA28AD87BC00BC33B4 /* LocationManager.swift in Sources */,
+				5EC8A2C728AD87BC00BC33B4 /* PersistenceManager.swift in Sources */,
 				5EC8A29F28AD843A00BC33B4 /* AppDelegate.swift in Sources */,
+				5EC8A2C628AD87BC00BC33B4 /* LoginVC.swift in Sources */,
+				5EC8A2BD28AD878D00BC33B4 /* EntryVC.swift in Sources */,
+				5EC8A2C928AD87BC00BC33B4 /* RegisterVC.swift in Sources */,
 				5EC8A2A128AD843A00BC33B4 /* SceneDelegate.swift in Sources */,
 				5EC8A2A928AD843A00BC33B4 /* Favorite_Places.xcdatamodeld in Sources */,
+				5EC8A2CC28AD87BC00BC33B4 /* FavoritePlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +443,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EC8A2B528AD853600BC33B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EC8A2B628AD853600BC33B4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EC8A2B528AD853600BC33B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5EC8A2B828AD853600BC33B4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EC8A2B528AD853600BC33B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5EC8A2A728AD843A00BC33B4 /* Favorite_Places.xcdatamodeld */ = {
